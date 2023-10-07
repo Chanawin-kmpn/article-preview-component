@@ -1,0 +1,235 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+img,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.8125rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsl(210, 46%, 95%);
+}
+
+.container {
+    position: relative;
+    width: 20.4375rem;
+    max-width: 100%;
+    min-height: 31.5rem;
+    border-radius: 10px;
+    background-color: hsla(0, 0%, 100%, 1);
+    margin: 4.625rem 1.5rem;
+    overflow: hidden;
+}
+
+.main-content {
+    padding: 2.25rem 2rem 1.25rem;
+}
+
+.main-hero {
+    height: 12.5rem;
+    background-image: url(./images/drawers.png);
+    background-repeat: no-repeat;
+    background-position: left 0 bottom -3rem;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.header-content {
+    color: hsla(217, 19%, 35%, 1);
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0.0125rem;
+    margin-bottom: 0.75em;
+}
+
+.description-content {
+    color: hsla(214, 17%, 51%, 1);
+    font-weight: 500;
+    line-height: 1.5384;
+    letter-spacing: 0.0093rem;
+}
+
+.writer-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2.4615em;
+}
+
+.writer-content>img {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 40px;
+}
+
+.writer-info {
+    line-height: 1.5384;
+    letter-spacing: 0.0076rem;
+}
+
+.writer-name {
+    color: hsla(217, 19%, 35%, 1);
+    font-weight: 700;
+}
+
+.write-date {
+    color: hsla(212, 23%, 69%, 1);
+    font-weight: 500;
+}
+
+.share-content,
+.share-btn-close {
+    text-align: center;
+    width: 2rem;
+    height: 2rem;
+    border: none;
+    border-radius: 32px;
+    margin-left: auto;
+    padding: 0 0.5625rem 0.1rem;
+}
+
+.share-content {
+    background-color: hsla(210, 46%, 95%, 1);
+    transition: display 1s ease;
+
+}
+
+.share-btn-close {
+    background-color: hsla(214, 17%, 51%, 1);
+}
+
+.share-expand {
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    background-color: hsla(217, 19%, 35%, 1);
+    bottom: 0;
+    padding: 1rem 2rem;
+    margin-top: 10px;
+}
+
+
+.share-expand>p {
+    color: hsla(212, 23%, 69%, 1);
+    text-transform: uppercase;
+    line-height: 1.5384;
+    letter-spacing: 0.3846rem;
+    margin-right: 0.7125rem;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: hsla(0, 0%, 100%, 1);
+    padding: 0 1rem;
+}
+
+.attribution {
+    font-size: 0.875rem;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 1200px) {
+
+    .container {
+        width: 100%;
+        max-width: 45.625rem;
+        max-height: 17.5rem;
+        min-height: auto;
+        overflow: visible;
+        margin: 16.225rem 1.5rem;
+    }
+
+    .wrapper {
+        display: flex;
+    }
+
+    .main-hero {
+        width: 21.875rem;
+        background-image: url(./images/bigger-drawers.png);
+        background-position: left 0rem bottom 0rem;
+        height: 17.5rem;
+        background-size: cover;
+        overflow: hidden;
+        border-radius: 10px 0 0 10px;
+    }
+
+    .main-content {
+        max-width: 27.8125rem;
+        padding: 2rem 2.5rem;
+    }
+
+    .header-content {
+        font-size: 1.25rem;
+        line-height: 1.4;
+    }
+
+    .description-content {
+        margin-bottom: 1.3em;
+    }
+
+    .writer-content {
+        margin-top: 1.3615em;
+    }
+
+    .share-expand {
+        position: absolute;
+        gap: 1rem;
+        max-width: 15.5rem;
+        border-radius: 10px;
+        right: 0;
+        margin: 6.1rem -4.3rem;
+    }
+
+    .background-clip {
+        position: absolute;
+        width: 1.5rem;
+        height: 0.75rem;
+        background-color: hsla(217, 19%, 35%, 1);
+        clip-path: polygon(50% 100%, 0 0, 100% 0);
+        left: 44.5%;
+        bottom: -22.7%;
+    }
+
+    .share-btn-close {
+        position: absolute;
+        left: 43.5%;
+        bottom: -117.5%;
+    }
+
+    .attribution {
+        font-size: 1rem;
+    }
+}
